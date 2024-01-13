@@ -1,0 +1,103 @@
+<style>
+  /* Toolbar Styles */
+  .toolbar {
+    position: relative;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .toolbar img {
+    width: 70px;
+    margin: 0 26px;
+  }
+  
+  .toolbar span {
+    font-size: 1.8rem;
+  }
+  
+  .toolbar .spacer {
+    flex: 1;
+  }
+  
+  .toolbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 40px;
+    margin: 10px;
+  }
+  
+  .toolbar li {
+    margin-right: 26px;
+  }
+  
+  .toolbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .toolbar a:hover {
+    opacity: 0.8;
+  }
+  
+  </style>
+
+
+<div class="toolbar" role="banner">
+  <img width="40" alt="Customer Management" src="../assets/images/people.png"/>
+  <span>Customer Manager</span>
+  <div class="spacer"></div>
+  <ul class="flex items-center space-x-4">
+    <li><a class="hover:underline" routerLink="/home">Home</a></li>
+    <li><a class="hover:underline" routerLink="/customers">Customers</a></li>
+    <li><a class="hover:underline" routerLink="/orders">Orders</a></li>
+    <li><a class="hover:underline" routerLink="/about">About</a></li>
+    <li><a class="hover:underline" routerLink="/login">Logout</a></li>
+  </ul>
+  
+</div>
+
+<div class="view">
+  <div class="container">
+    <header>
+      <h3><span class="glyphicon glyphicon-info-sign"></span><svg xmlns="http://www.w3.org/2000/svg" width="46" height="56" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+        <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+        <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+      </svg> About</h3>
+    </header>
+    <br />
+    <div class="row">
+      <div class="col-md-2">GitHub:</div>
+      <div class="col-md-10"><a href="https://github.com/kandatikavya7/ANGULAR15-S1.git" target="_blank">https://github.com/kandatikavya7/ANGULAR15-S1.git</a></div>
+    </div>
+    
+    <div class="info-container">
+      <div class="row">
+        <div class="col-md-2">Twitter</div>
+        <div class="col-md-10"><a href="https://twitter.com/i/flow/login" target="_blank">https://twitter.com/i/flow/login</a></div>
+      </div>
+      <br />
+      <!-- New sections for YouTube, Instagram, and Facebook -->
+      <div class="row">
+        <div class="col-md-2">YouTube:</div>
+        <div class="col-md-10"><a href="https://www.youtube.com/" target="_blank">https://www.youtube.com/</a></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-2">Instagram:</div>
+        <div class="col-md-10"><a href="https://www.instagram.com/" target="_blank">https://www.instagram.com/</a></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-2">Facebook:</div>
+        <div class="col-md-10"><a href="https://www.facebook.com/" target="_blank">https://www.facebook.com/</a></div>
+      </div>
+    </div>
+  </div>
+</div>
